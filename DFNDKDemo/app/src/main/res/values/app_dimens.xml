@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_default_left_margin">16dp</dimen>
+    <dimen name="app_default_top_margin">16dp</dimen>
+    <dimen name="app_default_bottom_margin">16dp</dimen>
+    <dimen name="app_default_item_height">50dp</dimen>
+</resources>

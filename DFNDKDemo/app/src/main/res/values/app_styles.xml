@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTvStyleItem">
+        <!--TextView格式1：长条item,上下居中,左侧有margin-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/app_default_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/app_default_left_margin</item>
+    </style>
+
+</resources>

@@ -1,0 +1,49 @@
+ext {
+    compileSdkVersion = 26
+    buildToolsVersion = "26.0.2"
+    minSdkVersion = 17
+    targetSdkVersion = 26
+
+    //Version
+    supportLibrary = '25.4.0'
+
+    appVersionCode = 1
+    appVersionName = "1.0.0"
+
+    //butterknife version
+    butterknifeVersion = "8.8.1"
+
+    retrofitSdkVersion = "2.2.0"
+    rxandroid = "1.1.0"
+    glide = "3.7.0"
+    zxing = "3.3.2"
+    walle = "1.1.6"
+
+    //Support Libraries dependencies
+    supportDependencies = [
+            design                    : "com.android.support:design:${supportLibrary}",
+            recyclerView              : "com.android.support:recyclerview-v7:${supportLibrary}",
+            cardView                  : "com.android.support:cardview-v7:${supportLibrary}",
+            appCompat                 : "com.android.support:appcompat-v7:${supportLibrary}",
+            supportAnnotation         : "com.android.support:support-annotations:${supportLibrary}",
+            supportv4                 : "com.android.support:support-v4:${supportLibrary}",
+            supportGridLayout         : "com.android.support:gridlayout-v7:${supportLibrary}",
+            supportExifinterface      : "com.android.support:exifinterface:${supportLibrary}",
+            supportV13                : "com.android.support:support-v13:${supportLibrary}",
+            butterknife               : "com.jakewharton:butterknife:${butterknifeVersion}",
+            butterknife_compiler      : "com.jakewharton:butterknife-compiler:${butterknifeVersion}",
+            "retrofit2"               : "com.squareup.retrofit2:retrofit:${retrofitSdkVersion}",
+            "retrofit2_converter_gson": "com.squareup.retrofit2:converter-gson:${retrofitSdkVersion}",
+            "retrofit2_adapter_rxjava": "com.squareup.retrofit2:adapter-rxjava:${retrofitSdkVersion}",
+
+            // rx.android.schedulers.AndroidSchedulers
+            "rxandroid"               : "io.reactivex:rxandroid:${rxandroid}",
+            "glide"                   : "com.github.bumptech.glide:glide:${glide}",
+            //ZXing
+            "zxing"                   : "com.google.zxing:core:${zxing}",
+            walle                     : "com.meituan.android.walle:library:${walle}",
+            umeng_common              : "com.umeng.sdk:common:latest.integration",
+            umeng_analytics           : "com.umeng.sdk:analytics:latest.integration",
+            fastjson           : "com.alibaba:fastjson:1.1.56.android"
+    ]
+}
