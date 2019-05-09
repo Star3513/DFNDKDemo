@@ -7,7 +7,7 @@ package com.deepfinch.ndk.dfjnilib.jni;
 public class DFTransportDemo {
     // Used to load the 'native-lib' library on application startup.
     static {
-        System.loadLibrary("native-lib");
+        System.loadLibrary("df_demo_jni");
     }
 
     public native int getCurrentTimeHour();

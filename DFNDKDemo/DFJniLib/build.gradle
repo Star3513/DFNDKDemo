@@ -8,14 +8,11 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
         externalNativeBuild {
-            cmake {
-                cppFlags ""
+            ndkBuild {
+                arguments "NDK_APPLICATION_MK:=src/main/cpp/jni/Application.mk"
+                abiFilters "armeabi-v7a", "arm64-v8a"
             }
-        }
-        ndk {
-            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
         }
     }
 
@@ -27,8 +24,8 @@ android {
     }
 
     externalNativeBuild {
-        cmake {
-            path "CMakeLists.txt"
+        ndkBuild {
+            path 'src/main/cpp/jni/Android.mk'
         }
     }
 }
