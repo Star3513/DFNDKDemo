@@ -6,9 +6,12 @@ package com.deepfinch.ndk.dfjnilib.jni;
 
 public class DFTransportBean {
     private int resultInt;
+    private int[] resultIntArray;
     private float resultFloat;
+    private float[] resultFloatArray;
     private String resultStringOne;
     private String resultStringTwo;
+    private DFTransportModel transportModel;
 
     public int getResultInt() {
         return resultInt;
@@ -16,6 +19,14 @@ public class DFTransportBean {
 
     public void setResultInt(int resultInt) {
         this.resultInt = resultInt;
+    }
+
+    public int[] getResultIntArray() {
+        return resultIntArray;
+    }
+
+    public void setResultIntArray(int[] resultIntArray) {
+        this.resultIntArray = resultIntArray;
     }
 
     public float getResultFloat() {
@@ -40,5 +51,21 @@ public class DFTransportBean {
 
     public void setResultStringTwo(String resultStringTwo) {
         this.resultStringTwo = resultStringTwo;
+    }
+
+    public float[] getResultFloatArray() {
+        return resultFloatArray;
+    }
+
+    public void setResultFloatArray(float[] resultFloatArray) {
+        this.resultFloatArray = resultFloatArray;
+    }
+
+    public DFTransportModel getTransportModel() {
+        return transportModel;
+    }
+
+    public void setTransportModel(DFTransportModel transportModel) {
+        this.transportModel = transportModel;
     }
 }

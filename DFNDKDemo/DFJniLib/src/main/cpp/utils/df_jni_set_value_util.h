@@ -24,12 +24,20 @@ set_float_value(JNIEnv *env, jclass return_class, jobject return_object, std::st
                 jfloat float_value);
 
 jobject
+set_float_array_value(JNIEnv *env, jclass return_class, jobject return_object,
+                      std::string field_name, float *float_array_value, int float_array_length);
+
+jobject
 set_string_value_char(JNIEnv *env, jclass return_class, jobject return_object, std::string field_name,
                  const char* char_array_value);
 
 jobject
 set_string_value(JNIEnv *env, jclass return_class, jobject return_object, std::string field_name,
                  jstring string_value);
+
+jobject
+set_object_value(JNIEnv *env, jclass return_class, jobject return_object, std::string field_name,
+                 jobject object_value, std::string class_path_value);
 
 };
 
