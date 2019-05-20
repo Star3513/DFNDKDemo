@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.deepfinch.ndk.demo.adapter.DFTestListAdapter;
 import com.deepfinch.ndk.demo.adapter.bean.DFTestListBean;
+import com.deepfinch.ndk.demo.adapter.operator.DFCameraDemoTestOperator;
 import com.deepfinch.ndk.demo.adapter.operator.DFNDKDemoTestOperator;
 import com.deepfinch.ndk.demo.base.DFBaseActivity;
 
@@ -43,7 +44,9 @@ public class DFMainActivity extends DFBaseActivity {
     private void initData(){
         List<DFTestListBean> testListBeanList = new ArrayList<>();
         DFTestListBean testListBean = new DFTestListBean("NDK测试", new DFNDKDemoTestOperator());
+        DFTestListBean testCameraBean = new DFTestListBean("相机测试", new DFCameraDemoTestOperator());
         testListBeanList.add(testListBean);
+        testListBeanList.add(testCameraBean);
         mTestListAdapter.refreshData(testListBeanList);
     }
 }

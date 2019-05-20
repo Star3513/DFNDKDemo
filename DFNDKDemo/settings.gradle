@@ -1,1 +1,1 @@
-include ':app', ':DFJniLib', ':DFCommonUtils'
+include ':app', ':DFJniLib', ':DFCommonUtils', ':DFCamearService'
