@@ -65,4 +65,5 @@ dependencies {
     implementation supportDependencies.recyclerView
     implementation project(':DFJniLib')
     implementation project(':DFCommonUtils')
+    implementation project(':DFCamearService')
 }

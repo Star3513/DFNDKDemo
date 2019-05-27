@@ -9,6 +9,7 @@ import com.deepfinch.ndk.demo.adapter.bean.DFTestListBean;
 import com.deepfinch.ndk.demo.adapter.operator.DFCameraDemoTestOperator;
 import com.deepfinch.ndk.demo.adapter.operator.DFNDKDemoTestOperator;
 import com.deepfinch.ndk.demo.base.DFBaseActivity;
+import com.deepfinch.ndk.demo.utils.PermissionRequestUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +27,8 @@ public class DFMainActivity extends DFBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_activity_main);
         bindView();
+
+        PermissionRequestUtils.requestCameraPermission(this);
 
         init();
     }
